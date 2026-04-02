@@ -2,7 +2,6 @@ package main;
 import java.util.ArrayList;
 import modelo.Financiamento;
 import util.InterfaceUsuario;
-
 import static modelo.Financiamento.dadosTodosFinanciamentos;
 
 public class Main {
@@ -17,7 +16,7 @@ public class Main {
 
         dadosTodosFinanciamentos(financiamentos);
 
-        //Financiamento novoFinanciamento = new Financiamento(iu.pedirValorImovel(), iu.pedirPrazoFinanciamento(), iu.pedirTaxaJuros());
-
+        Financiamento novoFinanciamento = new Financiamento(iu.pedirValorImovel(), iu.pedirPrazoFinanciamento(), iu.pedirTaxaJuros());
+        novoFinanciamento.dadosFinanciamento();
     }
 }
